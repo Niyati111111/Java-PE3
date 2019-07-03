@@ -20,13 +20,13 @@ public class FirstLastDayWeekTest {
     }
 
     @Test
-    public void returnLastDayOfWeek() {
+    public void returnLastDayOfWeek() { //checks whether the result matches the expected output
         String result = firstLastDayWeek.calculateLastDayWeek();
         assertEquals("Sun 07/07/2019", result);
     }
 
     @Test
-    public void returnFirstDayOfWeek() {
+    public void returnFirstDayOfWeek() { //checks whether the result matches the expected output
         String result = firstLastDayWeek.calculateFirstDayWeek();
         assertEquals("Mon 01/07/2019", result);
     }

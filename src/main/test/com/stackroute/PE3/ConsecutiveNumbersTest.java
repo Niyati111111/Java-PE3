@@ -19,28 +19,27 @@ public class ConsecutiveNumbersTest {
     }
 
     @Test
-    public void checkNonConsecutive() {
-        boolean expected = false;
+    public void checkNonConsecutive() { //checks whether the result matches the expected output
 
-        boolean actual = consecutiveNumbers.checkConsecutive("98,96,95,94,93");
+        boolean actual = consecutiveNumbers.checkConsecutive("-98,-96,-95,-94,-93");
 
-        assertEquals(expected, actual);
+        assertFalse(actual);
     }
 
     @Test
-    public void checkConsecutiveOne() {
-        boolean expected = true;
+    public void checkConsecutiveOne() { //checks whether the result matches the expected output
+
         boolean actual = consecutiveNumbers.checkConsecutive("54,53,52,51,50,49,48");
 
-        assertEquals(expected, actual);
+        assertTrue(actual);
     }
 
     @Test
-    public void checknonConsecutiveTwo() {
-        boolean expected = false;
+    public void checkNonConsecutiveTwo() { //checks whether the result matches the expected output
+
         boolean actual = consecutiveNumbers.checkConsecutive("1,2,3,4,5,6,6");
 
-        assertEquals(expected, actual);
+        assertFalse(actual);
     }
 
 }

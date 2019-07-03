@@ -4,6 +4,7 @@ import java.time.*;
 import java.text.*;
 public class FirstLastDayWeek {
 
+    //this function calculates the last day of the week
       public String calculateLastDayWeek() {
           // Get calendar set to current date and time
           Calendar calendar = Calendar.getInstance();
@@ -22,6 +23,7 @@ public class FirstLastDayWeek {
 
       }
 
+      //this function calculates the first day of the week
       public String calculateFirstDayWeek() {
           Calendar calendar = Calendar.getInstance();
 

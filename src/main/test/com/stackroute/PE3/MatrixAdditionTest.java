@@ -19,7 +19,7 @@ public class MatrixAdditionTest {
     }
 
     @Test
-    public void inputTwoMatricesReturnsSum() {
+    public void inputTwoMatricesReturnsSum() {  //checks whether the result matches the expected output
         int[][] matrix = { {2,3,1}, {4, 2, 1} };
         int[][] anotherMatrix = {{3,2,1},{2,4,5}};
         int rowMatrix = matrix.length;
@@ -36,7 +36,7 @@ public class MatrixAdditionTest {
     }
 
     @Test
-    public void inputAnotherTwoMatricesReturnsSum() {
+    public void inputAnotherTwoMatricesReturnsSum() { //checks whether the result matches the expected output
         int[][] matrix = {{2, -3, 1}, {4, 2, 1}};
         int[][] anotherMatrix = {{3, 2, 1}, {2, -4, 5}};
         int rowMatrix = matrix.length;
@@ -54,7 +54,7 @@ public class MatrixAdditionTest {
     }
 
         @Test
-        public void inputTwoMatricesReturnsFailure() {
+        public void inputTwoMatricesReturnsFailure() { //checks whether the result matches the expected output
             int[][] matrixNew = { {2,-3,1}, {4, 2, 1}, {2,3,1} };
             int[][] anotherMatrixNew = {{3,2,1},{2,-4,5}};
             int rowMatrixNew = matrixNew.length;

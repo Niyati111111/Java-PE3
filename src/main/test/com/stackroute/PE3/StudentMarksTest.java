@@ -19,7 +19,7 @@ public class StudentMarksTest {
     }
 
     @Test
-    public void inputMarksDisplaySuccessMessage() {
+    public void inputMarksDisplaySuccessMessage() { //checks whether the result matches the expected output
         int number = 5;
         int marks[] = {78,23,45,65,87};
         String result = studentMarks.checkRange(number, marks);
@@ -27,7 +27,7 @@ public class StudentMarksTest {
     }
 
     @Test
-    public void inputInvalidMarksDisplayErrorMessage() {
+    public void inputInvalidMarksDisplayErrorMessage() { //checks whether the result matches the expected output
         int number = 5;
         int marks[] = {78,-23,45,65,87};
         String result = studentMarks.checkRange(number, marks);
@@ -35,7 +35,7 @@ public class StudentMarksTest {
     }
 
     @Test
-    public void inputMarksDisplayMessage() {
+    public void inputMarksDisplayMessage() { //checks whether the result matches the expected output
         int number = 3;
         int marks[] = {78,-3,33};
         String result = studentMarks.checkRange(number, marks);
